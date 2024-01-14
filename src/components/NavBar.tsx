@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 type Link = {
   label: string;
   route: string;
@@ -24,13 +26,14 @@ function NavBar() {
       <nav className="w-screen lg:w-1/2 flex flex-nowrap justify-around lg:justify-between mx-auto">
         {links.map((link: Link, index: number) => {
           return (
-            <a
+            <Link
               key={index}
-              href={link.route}
-              className="text-lg md:text-2xl text-white p-6 pb-4 border-b-2 border-transparent hover:border-primary focus:outline-none focus:border-primary focus:border-2"
+              to={link.route}
+              className="text-lg md:text-2xl text-white p-6 pb-4 border-b-2 border-transparent 
+                hover:border-primary focus:outline-none focus:border-primary"
             >
               {link.label}
-            </a>
+            </Link>
           );
         })}
       </nav>
