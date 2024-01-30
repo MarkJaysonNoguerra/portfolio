@@ -30,7 +30,7 @@ function NavBar() {
               key={index}
               to={link.route}
               className="text-lg md:text-2xl text-white p-6 pb-4 border-b-2 border-transparent 
-                hover:border-primary focus:outline-none focus:border-primary"
+                hover:border-primary"
             >
               {link.label}
             </Link>

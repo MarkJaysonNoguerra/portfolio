@@ -59,7 +59,7 @@ function Projects() {
                     <h3 className="text-xl md:text-3xl font-bold">
                       {project.title}
                     </h3>
-                    <hr className="w-[15rem] mx-auto my-2" />
+                    <hr className="w-[10rem] sm:w-[15rem] mx-auto my-2" />
                     <span className="text-base md:text-xl">
                       {project.summary}
                     </span>
@@ -70,14 +70,14 @@ function Projects() {
                       target="_blank"
                       className="p-6 mx-6 rounded-md bg-primary font-medium"
                     >
-                      Live Demo
+                      Demo
                     </a>
                     <a
                       href={project.github}
                       target="_blank"
                       className="p-6 mx-6 rounded-md bg-primary font-medium"
                     >
-                      Github
+                      Code
                     </a>
                   </div>
                 </div>
