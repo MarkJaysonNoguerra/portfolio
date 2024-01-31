@@ -3,39 +3,42 @@ type Project = {
   summary: string;
   demo: string;
   github: string;
+  image: string;
 };
 
 function Projects() {
   const projects: Project[] = [
     {
       title: "League of Legends",
-      summary: "Simple angular 8 web app that uses riot api",
+      summary: `This web application utilizes the Riot API to showcase detailed information about League of Legends characters.
+        This could be used for exploring the game champions which is built using the Angular framework.`,
       demo: "https://markjaysonnoguerra.github.io/lol/main",
-      github: "https://github.com/MarkJaysonNoguerra",
+      github: "https://github.com/MarkJaysonNoguerra/lol",
+      image: "/projects/league-of-legend.png",
     },
     {
-      title: "League of Legends",
-      summary: "Simple angular 8 web app that uses riot api",
-      demo: "https://markjaysonnoguerra.github.io/lol/main",
-      github: "https://github.com/MarkJaysonNoguerra",
+      title: "Shooter Game",
+      summary:
+        "This is a straightforward shooting game created using Phaser.js. ",
+      demo: "https://markjaysonnoguerra.github.io/shooter",
+      github: "https://github.com/MarkJaysonNoguerra/shooter",
+      image: "/projects/shooter.png",
     },
     {
-      title: "League of Legends",
-      summary: "Simple angular 8 web app that uses riot api",
-      demo: "https://markjaysonnoguerra.github.io/lol/main",
-      github: "https://github.com/MarkJaysonNoguerra",
+      title: "Montrer",
+      summary: `This website is a comprehensive repository of TV series and movies, featuring data sourced from the TMDb API (The Movie Database). 
+        Explore a vast collection of entertainment content through this platform.`,
+      demo: "https://markjaysonnoguerra.github.io/Montrer",
+      github: "https://github.com/MarkJaysonNoguerra/Montrer",
+      image: "/projects/montrer.png",
     },
     {
-      title: "League of Legends",
-      summary: "Simple angular 8 web app that uses riot api",
-      demo: "https://markjaysonnoguerra.github.io/lol/main",
-      github: "https://github.com/MarkJaysonNoguerra",
-    },
-    {
-      title: "League of Legends",
-      summary: "Simple angular 8 web app that uses riot api",
-      demo: "https://markjaysonnoguerra.github.io/lol/main",
-      github: "https://github.com/MarkJaysonNoguerra",
+      title: "One Piece Cards",
+      summary: `This webpage showcases One Piece trading cards, with the card data gathered using Puppeteer for web scraping. 
+        Explore the world of One Piece through this collection of cards presented on the website.`,
+      demo: "https://markjaysonnoguerra.github.io/op-cards/",
+      github: "https://github.com/MarkJaysonNoguerra/op-cards",
+      image: "/projects/op-cards.png",
     },
   ];
 
@@ -51,9 +54,9 @@ function Projects() {
             return (
               <div
                 key={index}
-                className="w-full md:w-1/2 xl:w-2/6 px-12 mx-auto my-6"
+                className="h-[28rem] sm:h-[37rem] w-full md:w-1/2 xl:w-2/6 px-12 mx-auto my-6"
               >
-                <img src="/phaser.png" alt="working" className="rounded-md" />
+                <img src={project.image} alt="working" className="rounded-md" />
                 <div className="h-[12rem]">
                   <div className="text-center text-white mt-4">
                     <h3 className="text-xl md:text-3xl font-bold">
