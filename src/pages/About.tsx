@@ -1,17 +1,9 @@
 function About() {
   const paragraphs = [
-    `As someone who has been fortunate enough to work in various fields
-    for over 4 years, I am constantly amazed by the depth of knowledge
-    and expertise that surrounds me. As a website developer, e-commerce
-    brand manager, visual artist,`,
-    `As someone who has been fortunate enough to work in various fields
-    for over 4 years, I am constantly amazed by the depth of knowledge
-    and expertise that surrounds me. As a website developer, e-commerce
-    brand manager, visual artist,`,
-    `As someone who has been fortunate enough to work in various fields
-    for over 4 years, I am constantly amazed by the depth of knowledge
-    and expertise that surrounds me. As a website developer, e-commerce
-    brand manager, visual artist,`,
+    `Having had the privilege on working with diverse technologies, I'm consistently inspired by the wealth of knowledge around me.`,
+    `Learning from exceptionally talented individuals has been a highlight of my journey.`,
+    `The prospect of contributing to dynamic industries fuels my enthusiasm, driving me to continually enhance my skills and leave a positive mark in my field. Most importantly,`,
+    `I appreciate the chance to follow my passions, collaborating with others to craft innovative and compelling work.`,
   ];
 
   return (
